@@ -1,0 +1,298 @@
+* {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: #D31122;
+    font-family: ranga;
+    src: url('https://fonts.googleapis.com/css2?family=Ranga&display=swap');
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-container{
+    margin: 0;
+}
+
+nav {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+  
+}
+nav .main-menu {
+    display: flex;
+    list-style: none;
+}
+nav .main-menu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.5rem;
+}
+nav .main-menu li a:hover {
+    color: white;
+}
+nav .open-menu {
+    font-size: 2rem;
+    margin-top: 2%;
+    margin-left: 65%;
+    display: none;
+    cursor: pointer;
+}
+
+nav .main-menu .close-menu, i { 
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.topNavLogo {
+    border: 3px black solid;
+    z-index: 10;
+}
+#image-truck > img{
+    border: 5px black solid;
+}
+
+.second-section {
+    background-color: #D31122;
+}
+
+
+
+
+
+/* Mobile phones (portrait and landscape) ---------- */
+@media only screen and (max-width: 600px) {
+
+
+    nav {
+        height: 10%;
+        position: fixed;
+        top: 8%;
+        z-index: 10;
+        position: absolute;
+    }
+   
+    nav .main-menu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #D31122;
+        transition: top 1s ease;
+        display: none;
+        text-align:center;
+        z-index: 24;
+   }
+    nav .main-menu .close-menu {
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: -142px;
+        
+    }
+    nav .open-menu {
+        display: block;
+        margin-left: 84%;
+    }
+
+    nav .main-menu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+
+    .topNavLogo {
+        width: 30%;
+        z-index: 16;
+        margin-bottom: 5%;
+        margin-top: 10%;
+        margin-left: 5%;
+        position: relative;
+    }
+
+    .relative {
+        padding: 10px;
+        position: relative;
+        margin: 10px;
+        width:auto;
+    }
+
+    .navitem {
+        display: inline-block;
+        text-align: center;
+        width: auto;
+        height: 30px;
+        text-align: center;
+        border: gray;
+        background-color: #F84447;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 3%;
+        padding: 5px;
+    }
+
+    .first-section {
+        width: 100%;
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+
+    .first-section h3 {
+        font-size: 20px;
+    }
+
+    .second-section   {
+        width: 100%;
+        height: 30vh;
+    }
+
+    .second-section iframe {
+        height: 30vh;
+    }
+
+    .third-section {
+        width: 35%;
+        height: auto;
+        margin: auto;
+        padding: 15% 0 5% 0;
+        text-align: center;
+        font-size: 20px;
+    }
+
+  }
+
+/* Tablets and iPads (portrait and landscape) ---------- */
+@media screen and (min-width: 600px) and (max-width: 1023px){
+    nav {
+        width: 45%;
+        height: 10%;
+        position: fixed;
+        top: 16%;
+        left: 40%;
+        z-index: 10;
+        position: absolute;
+    }
+   
+    .topNavLogo {
+        width: 20%;
+        z-index: 16;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        position: relative;
+        margin-left: 5%;
+    }
+    
+    .first-section {
+        width: 100%;
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+
+    .first-section h3 {
+        font-size: 20px;
+    }
+
+    .second-section   {
+        width: 80%;
+        height: 40vh;
+        margin: auto;
+    }
+
+    .second-section iframe {
+        height: 40vh;
+    }
+
+    .third-section {
+        width: 35%;
+        height: auto;
+        margin: auto;
+        padding: 8% 0 5% 0;
+        text-align: center;
+        font-size: 20px;
+    }
+
+}
+/* Low resolution desktops and laptops ---------- */
+@media screen and (min-width: 1024px) {
+    nav {
+        width: 45%;
+        height: 10%;
+        position: fixed;
+        top: 24%;
+        left: 40%;
+        z-index: 10;
+        position: absolute;
+    }
+    
+
+    .topNavLogo {
+        width: 20%;
+        z-index: 16;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        position: relative;
+        margin-left: 5%;
+    }
+
+    .first-section {
+        width: 100%;
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+
+    .first-section h3 {
+        font-size: 20px;
+    }
+
+    .second-section   {
+        width: 80%;
+        height: 50vh;
+        margin: auto;
+    }
+
+    .second-section iframe {
+        height: 50vh;
+    }
+
+    .third-section {
+        width: 35%;
+        height: auto;
+        margin: auto;
+        padding: 8% 0 5% 0;
+        text-align: center;
+        font-size: 20px;
+    }
+
+}
+/* High resolution desktops and laptops ---------- */
+@media screen and (min-width: 1280px) {
+  
+}

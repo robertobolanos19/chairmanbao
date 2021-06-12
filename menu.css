@@ -1,0 +1,392 @@
+* {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: #D31122;
+    font-family: ranga;
+    src: url('https://fonts.googleapis.com/css2?family=Ranga&display=swap');
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-container{
+    margin: 0;
+}
+
+nav {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+  
+}
+nav .main-menu {
+    display: flex;
+    list-style: none;
+}
+nav .main-menu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.5rem;
+}
+nav .main-menu li a:hover {
+    color: white;
+}
+nav .open-menu {
+    font-size: 2rem;
+    margin-top: 2%;
+    margin-left: 65%;
+    display: none;
+    cursor: pointer;
+}
+
+nav .main-menu .close-menu, i { 
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.topNavLogo {
+    border: 3px black solid;
+    z-index: 10;
+}
+
+#image-truck > img{
+    border: 2px black solid;
+}
+
+.navitem {
+    background-color: #BD1628;
+}
+
+.second-section {
+    background-color: #D31122;
+}
+
+.third-section {
+    background-color: #BD1628;
+}
+
+
+
+/* Mobile phones (portrait and landscape) ---------- */
+@media only screen and (max-width: 600px) {
+
+    nav {
+        height: 10%;
+        position: fixed;
+        top: 8%;
+        z-index: 10;
+        position: absolute;
+    }
+   
+    nav .main-menu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #D31122;
+        transition: top 1s ease;
+        display: none;
+        text-align:center;
+        z-index: 24;
+   }
+    nav .main-menu .close-menu {
+        display: block;
+        position: absolute;
+        top: 70px;
+        right: -142px;
+        
+    }
+    nav .open-menu {
+        display: block;
+        margin-left: 84%;
+    }
+
+    nav .main-menu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+
+    .topNavLogo {
+        width: 30%;
+        z-index: 16;
+        margin-bottom: 5%;
+        margin-top: 10%;
+        margin-left: 5%;
+        position: relative;
+    }
+
+    .relative {
+        padding: 10px;
+        position: relative;
+        margin: 10px;
+        width:auto;
+    }
+
+    .navitem {
+        display: inline-block;
+        text-align: center;
+        width: auto;
+        height: 30px;
+        text-align: center;
+        border: gray;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 3%;
+        padding: 5px;
+    }
+
+    .first-section   {
+        width: 100%;
+        height: auto;
+        padding-top: 2%;
+    }
+
+    .image-truck > img{
+        width: 100%;
+        height: 35vh;
+        object-fit: fill;
+    }
+
+    .second-section {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        line-height: 1em;
+    }
+
+    .second-section h3 {
+        padding-top: 6%;
+        font-size: 18px;
+        padding-bottom: 6%;
+    }
+
+    .food-buttons button a{
+        color: black;
+    }
+
+    .third-section {
+        width: 100%;
+        height: auto;
+        padding: 8% 0 8% 0;
+    }
+
+    .third-section p {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        line-height: 1.8em;
+    }
+
+
+  }
+
+/* Tablets and iPads (portrait and landscape) ---------- */
+@media screen and (min-width: 600px) and (max-width: 1023px){
+    
+    nav {
+        width: 45%;
+        height: 10%;
+        position: fixed;
+        top: 26%;
+        left: 40%;
+        z-index: 10;
+        position: absolute;
+    }
+    
+    .topNavLogo {
+        width: 20%;
+        z-index: 16;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        position: relative;
+        margin-left: 5%;
+    }
+
+    .relative {
+        position: relative;
+        width: auto;
+        margin: auto;
+        margin-bottom: 2%;
+        margin-left: 20%;
+    }
+
+    .navitem {
+        display: inline-block;
+        text-align: center;
+        width: auto;
+        height: 30px;
+        text-align: center;
+        border: gray;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 3%;
+        padding: 2% 2% 3.5% 2%;
+        font-size: 16px;
+    }
+
+    .first-section   {
+        width: 100%;
+        height: auto;
+        padding-top: 2%;
+    }
+
+    .image-truck > img{
+        width: 80%;
+        height: 65vh;
+        margin-left: 10%;
+        object-fit: fill;
+    }
+
+    .second-section {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        line-height: 1em;
+   
+    }
+
+    .second-section h3 {
+        padding-top: 3%;
+        font-size: 23px;
+        padding-bottom: 3%;
+    }
+
+    .food-buttons button a{
+        color: black;
+    }
+
+    .third-section {
+        width: 100%;
+        height: auto;
+        padding: 4% 0 4% 0;
+    }
+
+    .third-section p {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        line-height: 1.8em;
+        font-size: 18px;
+    }
+
+
+}
+/* Low resolution desktops and laptops ---------- */
+@media screen and (min-width: 1024px) {
+
+    nav {
+        width: 45%;
+        height: 10%;
+        position: fixed;
+        top: 24%;
+        left: 40%;
+        z-index: 10;
+        position: absolute;
+    }
+    
+    .topNavLogo {
+        width: 20%;
+        z-index: 16;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        position: relative;
+        margin-left: 5%;
+    }
+    .relative {
+        position: relative;
+        width: auto;
+        margin: auto;
+        margin-bottom: 2%;
+        margin-left: 25%;
+    }
+
+    .navitem {
+        display: inline-block;
+        text-align: center;
+        width: auto;
+        height: 30px;
+        text-align: center;
+        border: gray;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+        margin-left: 3%;
+        padding: 2% 2% 3.5% 2%;
+        font-size: 16px;
+    }
+
+    .first-section   {
+        width: 100%;
+        height: auto;
+        padding-top: 2%;
+    }
+
+    .image-truck > img{
+        width: 70%;
+        height: 55vh;
+        margin-left: 15%;
+        object-fit: fill;
+        
+    }
+
+    .second-section {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        line-height: 1em;
+   
+    }
+
+    .second-section h3 {
+        padding-top: 3%;
+        font-size: 23px;
+        padding-bottom: 3%;
+    }
+
+    .food-buttons button a{
+        color: black;
+    }
+
+    .third-section {
+        width: 100%;
+        height: auto;
+        padding: 4% 0 4% 0;
+    }
+
+    .third-section p {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        line-height: 1.8em;
+        font-size: 18px;
+    }
+
+}
+/* High resolution desktops and laptops ---------- */
+@media screen and (min-width: 1280px) {
+  
+}
